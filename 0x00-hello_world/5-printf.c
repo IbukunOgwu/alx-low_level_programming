@@ -1,12 +1,12 @@
 #include <stdio.h>
+
 /**
-* Main prints the string in the function
-*
-*The main function will print the statement inside the main function
-*Return is always zero
-*/
+ * main - prints the phrase with proper grammar,
+ * but the outcome is a piece of art,
+ * Return: 0 if exited properly, non-zero otherwise
+ */
 int main(void)
 {
-	printf("with proper grammer, but the outcome is a piece of art,\n);
+	printf("with proper grammar, but the outcome is a piece of art,\n");
 	return (0);
 }
