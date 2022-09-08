@@ -1,15 +1,11 @@
 #include <stdio.h>
 
-/**
-*main to print the string that is put in the function
-*
-*The main function prints the text we need to see
-*Return: 0
-*/
-int main(void)
-{
+/** mainis the entry point and the return always ends with zero meaning success */
 
-	puts("\"Programming is like building a multilingual puzzle");
+int main(void)
+{    
+
+	puts("\"Programming is like building a multilingual puzzle.");
 	return (0);
+
 }
-^C
