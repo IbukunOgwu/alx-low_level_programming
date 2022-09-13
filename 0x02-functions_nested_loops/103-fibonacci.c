@@ -8,19 +8,19 @@
  */
 int main(void)
 {
-long int n1, n2, fn, total;
+long int n1, n2, fn, afn;
 n1 = 1;
 n2 = 2;
-fn = total = 0;
+fn = afn = 0;
 while (fn <= 4000000)
 {
 fn = n1 + n2;
 n1 = n2;
 if ((n1 % 2) == 0)
 {
-total += n1;
+afn += n1;
 }
 }
-printf("%ld\n", total);
+printf("%ld\n", afn);
 return (0);
 }
