@@ -1,9 +1,9 @@
 #include "main.h"
 
 /**
- * main-prints alphabets in small letters
+ * print_alphabet -prints alphabets in small letters
  *
- * description: lower cases alphabets
+ * description: prints alphabets with _putchar
  *
  * Return: void (success)
  */
