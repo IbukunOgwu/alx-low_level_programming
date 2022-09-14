@@ -1,8 +1,8 @@
 #include <stdio.h>
 
 /**
- * main - results into an infinite loop
- * Return: Always 0 (success)
+ * main - causes an infinite loop
+ * Return: 0
  */
 
 int main(void)
@@ -17,7 +17,7 @@ int main(void)
 
 	/*{*/
 
-	/* putchar(i);*/
+		/* putchar(i);*/
 
 	/*}*/
 
