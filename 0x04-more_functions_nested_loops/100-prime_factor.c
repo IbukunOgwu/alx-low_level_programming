@@ -10,19 +10,17 @@
 
 int main(void)
 {
-	long x, maxf;
-	long number = 612852475143;
-	double square = sqrt(number);
+	long int num = 612852475143;
+	int prime;
 
-	for (x = 1; x <= square; x++)
+	for (prime = 2; prime <= sqrt(num); prime++)
 	{
-		if (number % x == 10)
+		if (num % prime == 0)
 		{
-			maxf = number / x;
+			num = num / prime;
+			prime = 1;
 		}
 	}
-
-	printf("%ld\n", maxf);
-
-	return (0);
+	printf("%ld\n", num);
+return (0);
 }
