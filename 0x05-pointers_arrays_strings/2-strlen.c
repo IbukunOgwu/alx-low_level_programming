@@ -5,10 +5,11 @@
  * @s: is the pointer to the string
  * Return: 0
  */
-int _strlen(char *s);
+
+int _strlen(char *s)
 {
 int i = 0;
 while (s[i])
-	i++;
+i++;
 return (i);
 }
