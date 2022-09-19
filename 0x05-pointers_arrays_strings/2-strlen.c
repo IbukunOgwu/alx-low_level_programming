@@ -2,10 +2,9 @@
 
 /**
  * _strlen - a function that returns the length of a string
- * @s: is the string
- * Return: Length of string
+ * @s: is the pointer to the string
+ * Return: 0
  */
-
 int _strlen(char *s);
 {
 int i = 0;
