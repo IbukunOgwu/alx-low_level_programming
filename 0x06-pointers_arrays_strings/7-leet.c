@@ -8,21 +8,21 @@
 
 char *leet(char *s)
 {
-int a = 0, b = 0, l = 5;
-char r[5] = {'A', 'E', 'O', 'T', 'L'};
-char n[5] = {'4', '3', '0', '7', '1'};
-while (s[a])
+int count = 0, b;
+int low_letters[] = {97, 101, 111, 116, 108};
+int capital_letters[] = {65, 69, 79, 84, 76};
+int numbers[] = {52, 51, 48, 55, 49};
+while (*(s + count) != '\0')
 {
-b = 0;
-while (b < 1)
+for (b = 0; b < 5; b++)
 {
-if (s[a] == r[b] || s[a] - 32 == r[b])
+if (*(s + count) == low_letters[b] || *(s + count) == capital_letters[b])
 {
-s[a] = n[b];
+*(s + count) = numbers[b];
+break;
 }
-b++;
 }
-a++;
+count++;
 }
 return (s);
 }
