@@ -2,7 +2,8 @@
 #include <stdlib.h>
 
 /**
- * main - a program that takes first two integer arguments and prints the product
+ * main - a program that takes first two integer arguments and then
+ * prints the product
  * @argc: Number of command line arguments
  * @argv: Array name
  * Return: 1 if not enough arguments passed in, 0 otherwise
