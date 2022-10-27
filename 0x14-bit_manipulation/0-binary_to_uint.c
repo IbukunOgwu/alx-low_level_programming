@@ -1,22 +1,23 @@
 #include "main.h"
 
 /**
- * binary_to_uint - conversion of binary to int
- * @b: binary
- * Return: unsigned int
+ * binary_to_uint - converts a binary
+ * @b: pointer char
+ * Return: the converted number
  */
-
 unsigned int binary_to_uint(const char *b)
 {
-int i;
-unsigned int dec_val = 0;
+unsigned int a, v = 0;
 if (!b)
 return (0);
-for (i = 0; b[i]; i++)
+for (a = 0; b[a] != '\0'; a++)
 {
-if (b[i] < '0' || b[i] > '1')
+if (b[a] != '0' && b[a] != '1')
 return (0);
-dec_val = 2 * dec_val + (b[i] - '0');
+if (b[a] == '1')
+v = v * 2 + 1;
+else
+v = v * 2 + 0;
 }
-return (dec_val);
+return (v);
 }
