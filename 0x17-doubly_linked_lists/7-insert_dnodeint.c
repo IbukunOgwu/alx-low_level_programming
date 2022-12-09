@@ -42,7 +42,6 @@ head->next->prev = new;
 head->next = new;
 }
 }
-}
 break;
 }
 head = head->next;
